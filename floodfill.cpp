@@ -71,7 +71,7 @@ bool isTouching(int maze[20][20], int x, int y, int tile) {
 
 void renderMaze(int maze[20][20], int end[2], int distances[400]) {
 	std::cout << "\x1B[2J\x1B[H";
-	std::string symbols[5] = {"\x1B[0m██", "\x1B[40m  \x1B[0m", "\x1B[32m██\x1B[0m", "\x1B[31m██\x1B[0m"};
+	std::string symbols[5] = {"\x1B[0m@@", "\x1B[40m  \x1B[0m", "\x1B[32m@@\x1B[0m", "\x1B[31m@@\x1B[0m"};
 	for (int y = 0; y < 20; y++) {
 		for (int x = 0; x < 20; x++) {
 			if (end[0] == x & end[1] == y) {
