@@ -52,8 +52,6 @@ int main() {
 				if (maze[y][x] == 4) {
 					maze[y][x] = 2;
 					distances[y * 20 + x] = steps;
-					// std::cout << std::to_string(x) + ", " + std::to_string(y) << std::endl;
-					// std::cout << steps << std::endl;
 				}
 			}
 		}
